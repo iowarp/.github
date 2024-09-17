@@ -1,5 +1,6 @@
 ## IOWarp
 
+![image](../logos/GRC.png)
 <!--
 
 **Here are some ideas to get you started:**
