@@ -1,6 +1,8 @@
 ## IOWarp
 
-![image](../logos/GRC.png)
+
+<img src="https://github.com/iowarp/.github/blob/main/logos/GRC.png" width="200" />
+
 <!--
 
 **Here are some ideas to get you started:**
