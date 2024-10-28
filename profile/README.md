@@ -4,6 +4,12 @@
 
 This organization is dedicated to the development and advancement of IOWarp, a powerful cutting-edge data management platform designed to streamline and accelerate scientific workflows, especially those intensified by the rise of artificial intelligence (AI).  It optimizes data flow throughout the research process, ensuring efficient handling of diverse data types, formats, and the exponential growth of data.  IOWarp aims to significantly reduce data access times, accelerate the pace of scientific discovery, and foster a collaborative research environment.
 
+## 🎯 Core Principles
+- **Open Science**: Committed to transparency and reproducibility
+- **Community-Driven**: Built by researchers, for researchers
+- **Performance**: Optimized for high-performance computing environments
+- **Extensibility**: Easily adaptable to various scientific workflows
+  
 **Here's what you'll find in our repositories:**
 
 - **Core IOWarp Codebase:** Explore the source code, contribute to its development, and report any issues you encounter.
@@ -17,12 +23,6 @@ This organization is dedicated to the development and advancement of IOWarp, a p
 - **User-Friendly Interface:** IOWarp provides an intuitive interface for designing and managing complex workflows.
 - **Extensibility:** Customize IOWarp to your specific needs through a flexible plugin system.
 - **Open Source:** IOWarp is freely available under an open-source license, fostering collaboration and innovation.
-
-## 🎯 Core Principles
-- **Open Science**: Committed to transparency and reproducibility
-- **Community-Driven**: Built by researchers, for researchers
-- **Performance**: Optimized for high-performance computing environments
-- **Extensibility**: Easily adaptable to various scientific workflows
 
 ## 🚀 Getting Started (links coming online soon)
 - 📚 [Documentation](link-to-docs)
