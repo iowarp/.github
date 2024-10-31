@@ -1,6 +1,6 @@
 # Welcome to the IOWarp Organization!
 
-[![Zulip chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](iowarp.zulipchat.com)
+[![Zulip chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://iowarp.zulipchat.com)
 
 This organization is dedicated to the development and advancement of IOWarp, a powerful cutting-edge data management platform designed to streamline and accelerate scientific workflows, especially those intensified by the rise of artificial intelligence (AI).  It optimizes data flow throughout the research process, ensuring efficient handling of diverse data types, formats, and the exponential growth of data.  IOWarp aims to significantly reduce data access times, accelerate the pace of scientific discovery, and foster a collaborative research environment.
 
