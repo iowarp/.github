@@ -30,11 +30,11 @@ This organization is dedicated to the development and advancement of IOWarp, a p
 
 ## Components
 Here are the key repositories that form the iowarp project:
-[Content Assimilation Engine](https://github.com/iowarp/content-assimilation-engine): Responsible for processing, parsing, and normalizing various types of content, preparing it for further transfer and use within the system.
-[Platform Plugins Interface](https://github.com/iowarp/platform-plugins-interface): A unified platform for deploying various applications, including storage systems and benchmarks.
-[Interprocess Communication (Hermes SHM)](https://github.com/iowarp/cte-hermes-shm): This component is crucial for efficient data exchange between different processes. It provides a robust shared memory mechanism.
-[IOWarp Runtime](https://github.com/iowarp/iowarp-runtime): The foundational runtime environment for iowarp applications. It provides the core services and infrastructure necessary for other components to operate.
-[Content Transfer Engine](https://github.com/iowarp/content-transfer-engine): Manages the efficient and reliable transfer of processed content between different parts of the iowarp ecosystem.
+- [Content Assimilation Engine](https://github.com/iowarp/content-assimilation-engine): Responsible for processing, parsing, and normalizing various types of content, preparing it for further transfer and use within the system.
+- [Platform Plugins Interface](https://github.com/iowarp/platform-plugins-interface): A unified platform for deploying various applications, including storage systems and benchmarks.
+- [Interprocess Communication (Hermes SHM)](https://github.com/iowarp/cte-hermes-shm): This component is crucial for efficient data exchange between different processes. It provides a robust shared memory mechanism.
+- [IOWarp Runtime](https://github.com/iowarp/iowarp-runtime): The foundational runtime environment for iowarp applications. It provides the core services and infrastructure necessary for other components to operate.
+- [Content Transfer Engine](https://github.com/iowarp/content-transfer-engine): Manages the efficient and reliable transfer of processed content between different parts of the iowarp ecosystem.
 
 ## 🤝 Community & Support
 Join our vibrant community:
