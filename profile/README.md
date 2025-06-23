@@ -25,8 +25,8 @@ This organization is dedicated to the development and advancement of IOWarp, a p
 - **Open Source:** IOWarp is freely available under an open-source license, fostering collaboration and innovation.
 
 ## 🚀 Getting Started (links coming online soon)
-- 📚 [Documentation]([link-to-docs](https://grc.iit.edu/docs/iowarp/index))
-- 💻 [Quick Start Guide]([link-to-quickstart](https://grc.iit.edu/docs/iowarp/index))
+- 📚 [Documentation](https://grc.iit.edu/docs/iowarp/index)
+- 💻 [Quick Start Guide](https://grc.iit.edu/docs/iowarp/index)
 
 ## Components
 Here are the key repositories that form the iowarp project:
