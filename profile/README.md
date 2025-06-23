@@ -25,10 +25,16 @@ This organization is dedicated to the development and advancement of IOWarp, a p
 - **Open Source:** IOWarp is freely available under an open-source license, fostering collaboration and innovation.
 
 ## 🚀 Getting Started (links coming online soon)
-- 📚 [Documentation](link-to-docs)
-- 💻 [Quick Start Guide](link-to-quickstart)
-- 🎓 [Tutorials](link-to-tutorials)
-- 🔧 [API Reference](link-to-api)
+- 📚 [Documentation]([link-to-docs](https://grc.iit.edu/docs/iowarp/index))
+- 💻 [Quick Start Guide]([link-to-quickstart](https://grc.iit.edu/docs/iowarp/index))
+
+## Components
+Here are the key repositories that form the iowarp project:
+[Content Assimilation Engine](https://github.com/iowarp/content-assimilation-engine): Responsible for processing, parsing, and normalizing various types of content, preparing it for further transfer and use within the system.
+[Platform Plugins Interface](https://github.com/iowarp/platform-plugins-interface): A unified platform for deploying various applications, including storage systems and benchmarks.
+[Interprocess Communication (Hermes SHM)](https://github.com/iowarp/cte-hermes-shm): This component is crucial for efficient data exchange between different processes. It provides a robust shared memory mechanism.
+[IOWarp Runtime](https://github.com/iowarp/iowarp-runtime): The foundational runtime environment for iowarp applications. It provides the core services and infrastructure necessary for other components to operate.
+[Content Transfer Engine](https://github.com/iowarp/content-transfer-engine): Manages the efficient and reliable transfer of processed content between different parts of the iowarp ecosystem.
 
 ## 🤝 Community & Support
 Join our vibrant community:
@@ -36,10 +42,6 @@ Join our vibrant community:
 - 📋 [Issue Tracker](link-to-issues): Report bugs and request features
 - 📝 [Blog](link-to-blog): Latest updates and technical insights
 - 📣 [Social](link-to-linkedin/X): Follow us for news and updates
-
-## 📊 Used By
-- [Institution/Project 1]
-- [And many more...]
 
 ## 📖 Citation
 If you use IOWarp in your research, please cite:
