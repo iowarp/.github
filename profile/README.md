@@ -39,11 +39,3 @@ Here are the key repositories that form the iowarp project:
 ## 🤝 Community & Support
 Join our vibrant community:
 - 💬 [Community Chat](https://iowarp.zulipchat.com): Real-time discussions and support
-- 📋 [Issue Tracker](link-to-issues): Report bugs and request features
-- 📝 [Blog](link-to-blog): Latest updates and technical insights
-- 📣 [Social](link-to-linkedin/X): Follow us for news and updates
-
-## 📖 Citation
-If you use IOWarp in your research, please cite:
-```bibtex
-[Your citation here]
