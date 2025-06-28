@@ -39,3 +39,4 @@ Here are the key repositories that form the iowarp project:
 ## 🤝 Community & Support
 Join our vibrant community:
 - 💬 [Community Chat](https://iowarp.zulipchat.com): Real-time discussions and support
+- 📋 [Issue Tracker](https://github.com/iowarp/.github): Report bugs and request features
