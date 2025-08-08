@@ -25,15 +25,15 @@ This organization is dedicated to the development and advancement of IOWarp, a p
 - **Open Source:** IOWarp is freely available under an open-source license, fostering collaboration and innovation.
 
 ## 🚀 Getting Started (links coming online soon)
-- 📚 [Documentation](link-to-docs)
-- 💻 [Quick Start Guide](link-to-quickstart)
-- 🎓 [Tutorials](link-to-tutorials)
+- 📚 [Documentation](https://grc.iit.edu/docs/iowarp/index)
+- 💻 [Quick Start Guide](https://grc.iit.edu/docs/iowarp/index)
+- 🎓 [Tutorials](https://grc.iit.edu/docs/category/iowarp/)
 - 🔧 [API Reference](link-to-api)
 
 ## 🤝 Community & Support
 Join our vibrant community:
 - 💬 [Community Chat](https://iowarp.zulipchat.com): Real-time discussions and support
-- 📋 [Issue Tracker](link-to-issues): Report bugs and request features
+- 📋 [Issue Tracker](https://github.com/iowarp/.github/issues): Report bugs and request features
 - 📝 [Blog](link-to-blog): Latest updates and technical insights
 - 📣 [Social](link-to-linkedin/X): Follow us for news and updates
 

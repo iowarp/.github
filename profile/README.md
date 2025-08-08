@@ -35,7 +35,7 @@ Here are the key repositories that form the iowarp project:
 - [Interprocess Communication (Hermes SHM)](https://github.com/iowarp/cte-hermes-shm): This component is crucial for efficient data exchange between different processes. It provides a robust shared memory mechanism.
 - [IOWarp Runtime](https://github.com/iowarp/iowarp-runtime): The foundational runtime environment for iowarp applications. It provides the core services and infrastructure necessary for other components to operate.
 - [Content Transfer Engine](https://github.com/iowarp/content-transfer-engine): Manages the efficient and reliable transfer of processed content between different parts of the iowarp ecosystem.
-- [Scientific MCPs](https://github.com/iowarp/scientific-mcps): Provides various Model Context Protocols to bring AI to science.
+- [IoWarp MCPs](https://github.com/iowarp/iowarp-mcps): Provides various Model Context Protocols to bring AI to science.
 
 ## 🤝 Community & Support
 Join our vibrant community:
