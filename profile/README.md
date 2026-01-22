@@ -29,11 +29,15 @@ IOWarp implements a three-tier architecture spanning from low-level storage prim
 ```mermaid
 graph TB
     subgraph Intelligence["Intelligence Layer"]
-        AT[Agent Toolkit<br/>16 MCP Servers]
-        MCP[HDF5 · Slurm · ArXiv · Pandas<br/>Parquet · Darshan · ParaView · ...]
+        CC[Claude Code]
+        VSC[VS Code Copilot]
+        GC[Gemini CLI]
+        OC[OpenCode]
+        CL[Claudio]
     end
 
     subgraph Tool["Tool Layer"]
+        AT[Agent Toolkit<br/>16 MCP Servers]
         CAE[Context Assimilation Engine<br/>Data ingestion & transformation]
         CEE[Context Exploration Engine<br/>Data discovery & querying]
     end
@@ -50,8 +54,8 @@ graph TB
 
 | Layer | Purpose | Key Capability |
 |-------|---------|----------------|
-| **Intelligence** | AI agent interfaces | 16 MCP servers for scientific computing workflows |
-| **Tool** | Data processing | Ingestion, transformation, and exploration of scientific data |
+| **Intelligence** | Agentic interfaces | Claude Code, VS Code, Gemini CLI, OpenCode, Claudio |
+| **Tool** | AI-powered data tools | 16 MCP servers, data ingestion, transformation, exploration |
 | **Storage** | High-performance I/O | Sub-10μs task latency, multi-tiered buffering, GPU-aware memory |
 
 ---
