@@ -24,39 +24,59 @@ IOWarp provides the infrastructure layer that lets AI agents focus on science ra
 
 ## Architecture
 
-IOWarp implements a three-tier architecture spanning from low-level storage primitives to high-level AI agent tooling:
+IOWarp implements a three-tier architecture where everything works together as a unified platform:
 
 ```mermaid
 graph TB
-    subgraph Intelligence["Intelligence Layer"]
-        CC[Claude Code]
-        VSC[VS Code Copilot]
-        GC[Gemini CLI]
-        OC[OpenCode]
-        CL[Claudio]
+    subgraph Intelligence["🧠 Intelligence Layer"]
+        direction LR
+        subgraph External["External Agents"]
+            CC[Claude Code]
+            GC[Gemini CLI]
+            OC[OpenCode]
+        end
+        subgraph Framework["Claudio Framework"]
+            CL[Claudio SDK<br/><i>coming soon</i>]
+        end
     end
 
-    subgraph Tool["Tool Layer"]
-        AT[Agent Toolkit<br/>16 MCP Servers]
-        CAE[Context Assimilation Engine<br/>Data ingestion & transformation]
-        CEE[Context Exploration Engine<br/>Data discovery & querying]
+    subgraph Tool["🔧 Tool Layer"]
+        direction LR
+        subgraph Toolkit["Agent Toolkit"]
+            MCP[MCP Servers]
+            SK[Skills]
+            PL[Plugins]
+        end
+        JCD[Jarvis-CD<br/><i>runtime-deployment</i>]
     end
 
-    subgraph Storage["Storage Layer"]
-        CTE[Context Transfer Engine<br/>Multi-tiered I/O buffering]
-        RT[Chimaera Runtime<br/>Coroutine-based task execution]
-        CTP[Context Transport Primitives<br/>Shared memory & GPU support]
+    subgraph Storage["💾 Storage Layer"]
+        subgraph Engines["Context Engines"]
+            direction LR
+            CTE[Context Transfer Engine<br/><i>context-transfer-engine</i>]
+            CAE[Context Assimilation Engine<br/><i>core</i>]
+            CEE[Context Exploration Engine<br/><i>core</i>]
+        end
+        subgraph Infra["Infrastructure"]
+            direction LR
+            RT[Chimaera Runtime<br/><i>runtime</i>]
+            CTP[Transport Primitives<br/><i>context-transport-primitives</i>]
+        end
     end
 
-    Intelligence --> Tool
-    Tool --> Storage
+    External <--> Toolkit
+    Framework <--> Toolkit
+    Framework -.->|direct| Engines
+    Toolkit <--> Engines
+    Toolkit <--> JCD
+    Engines <--> Infra
 ```
 
-| Layer | Purpose | Key Capability |
-|-------|---------|----------------|
-| **Intelligence** | Agentic interfaces | Claude Code, VS Code, Gemini CLI, OpenCode, Claudio |
-| **Tool** | AI-powered data tools | 16 MCP servers, data ingestion, transformation, exploration |
-| **Storage** | High-performance I/O | Sub-10μs task latency, multi-tiered buffering, GPU-aware memory |
+| Layer | Purpose | Components |
+|-------|---------|------------|
+| **Intelligence** | Agentic interfaces & orchestration | External agents (Claude Code, Gemini CLI, OpenCode) + Claudio framework |
+| **Tool** | AI-powered tooling for scientific workflows | Agent Toolkit (16 MCP servers, skills, plugins) + Jarvis-CD deployment |
+| **Storage** | High-performance context management | 3 Context Engines + Chimaera Runtime + Transport Primitives |
 
 ---
 
@@ -67,23 +87,30 @@ graph TB
 | Repository | Description | Install |
 |------------|-------------|---------|
 | [**iowarp**](https://github.com/iowarp/iowarp) | Unified platform installation and CLI | `pip install iowarp` |
-| [**agent-toolkit**](https://github.com/iowarp/agent-toolkit) | 16 MCP servers for AI agents in scientific computing | `uvx iowarp-agent-toolkit mcp-servers` |
+| [**agent-toolkit**](https://github.com/iowarp/agent-toolkit) | 16 MCP servers, skills, and plugins for AI agents | `uvx iowarp-agent-toolkit mcp-servers` |
 
-### Core Platform
+### Storage Layer
+
+| Repository | Component | Description |
+|------------|-----------|-------------|
+| [**core**](https://github.com/iowarp/core) | All Engines | Unified monorepo: Assimilation + Exploration engines (for contributors) |
+| [**context-transfer-engine**](https://github.com/iowarp/context-transfer-engine) | CTE | Heterogeneous-aware, multi-tiered I/O buffering |
+| [**runtime**](https://github.com/iowarp/runtime) | Chimaera | High-performance modular runtime, coroutine-based execution |
+| [**context-transport-primitives**](https://github.com/iowarp/context-transport-primitives) | Primitives | Shared memory data structures with CUDA/ROCm support |
+
+### Tool Layer
 
 | Repository | Description |
 |------------|-------------|
-| [**core**](https://github.com/iowarp/core) | Unified monorepo containing all Context Engines (for contributors) |
-| [**runtime**](https://github.com/iowarp/runtime) | Chimaera: high-performance modular runtime with coroutine-based execution |
-| [**context-transfer-engine**](https://github.com/iowarp/context-transfer-engine) | Heterogeneous-aware, multi-tiered I/O buffering system |
-| [**context-transport-primitives**](https://github.com/iowarp/context-transport-primitives) | Shared memory data structures with CUDA/ROCm support |
-
-### Deployment & Utilities
-
-| Repository | Description |
-|------------|-------------|
+| [**agent-toolkit**](https://github.com/iowarp/agent-toolkit) | MCP servers, skills, plugins for scientific computing |
 | [**runtime-deployment**](https://github.com/iowarp/runtime-deployment) | Jarvis-CD: unified deployment platform for HPC applications |
 | [**ppi-jarvis-util**](https://github.com/iowarp/ppi-jarvis-util) | Python utilities for shell scripting, SSH, MPI operations |
+
+### Intelligence Layer
+
+| Component | Status | Description |
+|-----------|--------|-------------|
+| **Claudio** | Coming soon | Agent SDK framework for meta-prompting and orchestration |
 
 ---
 
@@ -149,7 +176,7 @@ We welcome contributions across all repositories. See individual repository CONT
 3. Follow the coding standards (Google C++ Style Guide for C++, PEP 8 for Python)
 4. Submit a pull request with clear description and tests
 
-For core platform development, start with the [core](https://github.com/iowarp/core) repository which contains the unified codebase.
+For core platform development, start with the [core](https://github.com/iowarp/core) repository.
 
 ---
 
