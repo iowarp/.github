@@ -4,8 +4,8 @@ This repository contains the GitHub organization profile and shared configuratio
 
 ## Contents
 
-- `profile/README.md` - Organization profile displayed at [github.com/iowarp](https://github.com/iowarp)
+- `profile/README.md` — Organization profile displayed at [github.com/iowarp](https://github.com/iowarp)
 
 ## About IOWarp
 
-See the [organization profile](https://github.com/iowarp) for information about IOWarp.
+IOWarp is an NSF-funded context engineering platform for autonomous AI agents in scientific computing. See the [organization profile](https://github.com/iowarp) or [iowarp.ai](https://iowarp.ai) for details.
