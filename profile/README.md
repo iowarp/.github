@@ -12,50 +12,9 @@
 
 ## Three-Layer Architecture
 
-```mermaid
-graph TB
-    subgraph Intelligence["Intelligence Layer"]
-        direction LR
-        subgraph ExtAgents["External Agents"]
-            CC[Claude Code]
-            GC[Gemini CLI]
-            OC[OpenCode]
-        end
-        subgraph CLIOAgent["CLIO Agent"]
-            CA["Agent SDK"]
-        end
-    end
-
-    subgraph Tooling["Tooling Layer"]
-        direction LR
-        subgraph CLIOKit["CLIO Kit"]
-            MCP[MCP Servers]
-            SK[Skills]
-            PL[Plugins]
-        end
-    end
-
-    subgraph Storage["Storage Layer — CLIO Core"]
-        subgraph Engines["Four Context Engines"]
-            direction LR
-            Ingest["CLIO Ingest"]
-            Transfer["CLIO Transfer"]
-            Explore["CLIO Explore"]
-            Plugin["CLIO Plugin"]
-        end
-        subgraph Infra["Infrastructure"]
-            direction LR
-            RT["Chimaera Runtime"]
-            CTP["Hermes SHM"]
-        end
-    end
-
-    ExtAgents <--> CLIOKit
-    CLIOAgent <--> CLIOKit
-    CLIOAgent -.->|direct| Engines
-    CLIOKit <--> Engines
-    Engines <--> Infra
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iowarp/.github/main/IOWarpArch.png" alt="IOWarp Architecture" />
+</p>
 
 | Layer | Name | Purpose |
 |-------|------|---------|
